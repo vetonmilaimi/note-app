@@ -1,0 +1,104 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  height: 100%;
+}
+
+p {
+  line-height: 1.6;
+}
+
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+
+.new-task {
+  width: 40%;
+  margin: 2em auto;
+  text-align: center;
+
+  input, textarea{
+    width: 60%;
+    margin: 0.5em auto;
+  }
+
+  textarea {
+    resize: none;
+    height: 10em;
+  }
+
+  .add-btn {
+    padding: 0.3em 0.9em
+  }
+}
+
+.app {
+  display: flex;
+  margin: 3% auto;
+  justify-content: space-between;
+  width: 80%;
+
+  .left-container {
+    width: 40%;
+    padding: 0.5em 0.8em;
+
+    .search {
+      display: flex;
+      justify-content: space-between;
+      width: 60%;
+      margin-bottom: 1em;
+      
+      input {
+        height: 1.6em;
+        padding: 0.5em 0.8em;
+        width: 100%;
+      }
+    }
+
+    .notes-list {
+      padding: 0.5em 0;
+      width: 60%;
+
+      .single-note {
+        background-color: rgb(8, 0, 255);
+        color: #fff;
+        padding: 0.2em 0.5em;
+        margin: 0.5em auto;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .right-container {
+    width: 55%;
+    padding: 0.5em 0.8em;
+
+    .my-note {
+      padding: 0.5em 0.8em;
+      background-color: aqua;
+    
+      h1 {
+        color: green;
+      }
+
+      .category {
+        color: rgb(255, 0, 0);
+      }
+
+      .content {
+        color: #333;
+      }
+    }
+  }
+}
