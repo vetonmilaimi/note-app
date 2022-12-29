@@ -1,15 +1,15 @@
-name: Merge branches
-run-name: Github Merge Branches
-on:
-  push:
-    branches:
-      - main
-jobs:
-  test-merge-branches:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          name: vetonmilaimi/note-app
-      - run: git checkout actions-test
-      - run: git merge main
+# name: Merge branches
+# run-name: Github Merge Branches
+# on:
+#   push:
+#     branches:
+#       - main
+# jobs:
+#   test-merge-branches:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v3
+#         with:
+#           name: vetonmilaimi/note-app
+#       - run: git checkout actions-test
+#       - run: git merge main
