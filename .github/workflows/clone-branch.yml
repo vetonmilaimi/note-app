@@ -12,4 +12,4 @@ jobs:
         with:
           name: vetonmilaimi/note-app
       - run: git checkout -b actions-test
-      - run: git merge main
+      - run: git merge main --force
