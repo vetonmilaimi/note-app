@@ -11,5 +11,5 @@ jobs:
       - uses: actions/checkout@v3
         with:
           name: vetonmilaimi/note-app
-      - run: git checkout actions-test
+      - run: git switch actions-test
       - run: git merge main
