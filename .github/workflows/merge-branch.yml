@@ -12,5 +12,5 @@ jobs:
         uses: devmasx/merge-branch@master
         with:
           type: now
-          target_branch: github-actions
+          target_branch: actions-test
           github_token: ${{ github.token }}
