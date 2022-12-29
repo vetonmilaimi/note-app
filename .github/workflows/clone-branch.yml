@@ -12,4 +12,5 @@ jobs:
         with:
           name: vetonmilaimi/note-app
       - run: git checkout -b actions-test
-      - run: git merge --continue
+      - run: git push --set-upstream origin actions-test
+      - run: git merge main
