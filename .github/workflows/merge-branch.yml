@@ -1,16 +1,16 @@
-name: Merge branches
-on:
-  push:
-    branches:
-      - main
-jobs: 
-  merge-branch:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Merging
-        uses: devmasx/merge-branch@master
-        with:
-          type: now
-          target_branch: actions-test
-          github_token: ${{ github.token }}
+# name: Merge branches
+# on:
+#   push:
+#     branches:
+#       - main
+# jobs: 
+#   merge-branch:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v3
+#       - name: Merging
+#         uses: devmasx/merge-branch@master
+#         with:
+#           type: now
+#           target_branch: actions-test
+#           github_token: ${{ github.token }}
